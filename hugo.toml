@@ -22,7 +22,7 @@ expiryDate = ["expiryDate"]
 
 [params.author]
   name = "Mudasir"
-  about = "Mudasir personal thoughts"
+  about = "about"
 
 [blackfriday]
 
@@ -71,5 +71,5 @@ expiryDate = ["expiryDate"]
 
   [[menu.main]]
     name = "About"
-    url = "about-hugo/"
+    url = "about/"
     weight = 20
