@@ -1,3 +1,75 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://imudasirahmed.github.io/mudasir.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Mudasir Blog Site'
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+theme = "hermit-v2"
+
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+
+rssLimit = 10
+
+copyright = "Mudasir"
+enableEmoji = true
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[params.author]
+  name = "Mudasir"
+  about = "Mudasir personal thoughts"
+
+[blackfriday]
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  themeColor = "#494f5c"
+
+  footerCopyright = "Footer"
+  justifyContent = false
+
+  relatedPosts = true
+  code_copy_button = true
+
+  homeSubtitlePrinter = true
+  scrollToTop = true 
+  global_mathjax = false
+  readTime = true
+  readTimeSeparator = "CHANGE ME READ TIME"
+  shareSocial = true
+  
+  [[params.socialLinks]]
+    name = "mastodon"
+    url = "https://joinmastodon.org/"
+
+  [[params.socialLinks]]
+    name = "x"
+    url = "https://twitter.com/"
+
+  [[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about-hugo/"
+    weight = 20
